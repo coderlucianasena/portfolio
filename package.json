@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "i": "^0.3.7",
-    "swiper": "^9.2.3"
+    "swiper": "^9.2.4"
   },
   "devDependencies": {
     "mixitup": "^3.3.1"

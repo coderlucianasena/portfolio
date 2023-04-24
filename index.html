@@ -4,17 +4,22 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
-            rel='stylesheet'>
-        <link rel="stylesheet" href="./assets/css/styles.css">
+        
+        <!-- === Swiper CSS === -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!-- === Box Icons === -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+        <!-- === CSS === -->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Portfolio Luciana Sena</title>
     </head>
     <body>
         <!-- Rolagem Topo -->
         <a href="#" class="scrolltop" id="scroll-top">
-            <i class='bx bx-chevron-up scrolltop__icon'></i>
+            <i class='bx bx-chevron-up scrolltop__icon'></i> <!-- Ícone para voltar ao topo -->
         </a>
 
         <!-- Header -->
@@ -24,42 +29,42 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link">Ínicio</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Ínicio</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
-                        <li class="nav__item"><a href="#qualification" class="nav__link">Qualificação</a></li>
-                        <li class="nav__item"><a href="#project" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#services" class="nav__link">Projetos Sociais</a></li>
+                        <li class="nav__item"><a href="#qualification" class="nav__link">Qualificação</a></li> <!-- Verificar ID, modificar #, conferir CSS -->
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li> <!-- Verificar ID, modificar #, conferir CSS -->
+                        <!-- <li class="nav__item"><a href="#project" class="nav__link">Projetos Sociais</a></li> Verificar ID, modificar #, conferir CSS -->
                         <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
                     </ul>
                 </div>
 
+                 <!-- Icone do Menu -->
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
+
             </nav>
         </header>
 
         <main class="l-main">
-            <!-- HOME -->
+            <!-- === HOME === -->
             <section class="home" id="home">
                 <div class="home__container bd-container bd-grid">
                     <div class="home__data">
                         <span class="home__greeting">Oi, meu nome é</span>
                         <h1 class="home__name">Luciana Sena</h1>
                         <span class="home__profession">Desenvoldedora Web</span>
-                        <a download="" href="./assets/pdf/Luciana_Sena_CV.pdf"
-                            class="button button-light">Download Cv</a>
+                        <a download="" href="./assets/pdf/Luciana_Sena_CV.pdf" class="button button-light .home__button" >Download Cv</a> <!-- Verificar o botão home__button -->
                     </div>
 
+                    <!-- Links Redes Sociais -->
                     <div class="home__social">
-                        <a href="#" class="home__social-icon"><i class='bx
-                                bxl-github'></i></a>
-                        <a href="#" class="home__social-icon"><i class='bx
-                                bxl-linkedin'></i></a>
-                        <a href="#" class="home__social-icon"><i class='bx
-                                bxl-whatsapp'></i></a>
+                        <a href="#" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                        <a href="#" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="home__social-icon"><i class='bx bxl-whatsapp'></i></a>
                     </div>
 
+                    <!-- Imagem da Home -->
                     <div class="home__img">
                         <img src="./assets/img/home.jpg" alt="">
                     </div>
@@ -67,7 +72,7 @@
                 </div>
             </section>
 
-            <!-- ==Sobre=== -->
+            <!-- === Sobre === -->
             <section class="about section bd-container" id="about">
                 <span class="section-subtitle">Minha história</span>
                 <h2 class="section-title">Sobre mim</h2>
@@ -80,26 +85,24 @@
                             </span>
                             Sou desenvolvedora frontend,
                             apaixonada por criar e desenvolver interfaces web.
-                            <!-- e estou buscando obter mais experiência na área.
-                        Uma desenvolvedora em desenvolvimento! -->
                         </p>
 
                         <div>
-                            <span class="about__number">-01</span>
+                            <span class="about__number">01</span>
                             <span class="about__achievement">Ano de Experiência</span>
                         </div>
 
                         <div>
-                            <span class="about__number">+10</span>
+                            <span class="about__number">10+</span>
                             <span class="about__achievement">Projetos completos</span>
                         </div>
 
                         <!-- <div>
                         <span class="about__number">01</span>
                         <span class="about__achievement">Anos de Experiência</span>
-                    </div> -->
+                        </div> -->
                     </div>
-                    
+                    <!-- Imagem do About -->
                     <img src="./assets/img/about.png" alt="" class="about__img">
                 </div>
             </section>
@@ -112,29 +115,26 @@
                 <div class="qualification__container bd-grid">
                     <div class="qualification__content">
                         <h2 class="qualification__title">
-                            <i class='bx bx-book-bookmark
-                                qualification__title-icon'></i>
+                            <i class='bx bx-book-bookmark qualification__title-icon'></i> 
                             Cursos
                         </h2>
+
+                        <!-- Edu 1 -->
                         <div class="bd-grid">
-
-                            <!-- Edu 1 -->
                             <div class="qualification__data">
-                                <h3 class="qualification__area">Engenharia de
-                                    Software</h3>
-
+                                <h3 class="qualification__area">Engenharia de Software</h3>
+                               
                                 <div class="qualification__box">
                                     <span class="qualification__work">
-                                        <i class='bx bx-book-alt
-                                            qualification__icon'></i>
+                                        <i class='bx bx-book-alt qualification__icon'></i>
                                         Wyden
                                     </span>
 
                                     <span class="qualification__work">
-                                        <i class='bx bx-calendar-alt
-                                            qualification__icon'></i>
+                                        <i class='bx bx-calendar-alt qualification__icon'></i>
                                         Jan 2023 - Jan 2026
                                     </span>
+
                                 </div>
                             </div>
                             <!-- End Edu 1 -->
@@ -146,8 +146,7 @@
 
                                 <div class="qualification__box">
                                     <span class="qualification__work">
-                                        <i class='bx bx-book-alt
-                                            qualification__icon'></i>
+                                        <i class='bx bx-book-alt qualification__icon'></i>
                                         Gama Academy
                                     </span>
 
@@ -161,49 +160,46 @@
                             <!-- End Edu 2 -->
 
                             <!-- Edu 3 -->
-                            <!-- <div class="qualification__data">
+                            <div class="qualification__data">
                                 <h3 class="qualification__area">Design UX/UI</h3>
+                                
                                 <div class="qualification__box">
                                     <span class="qualification__work">
-                                        <i class='bx bx-book-alt
-                                            qualification__icon'></i>
+                                        <i class='bx bx-book-alt qualification__icon'></i>
                                         Cubos Academy
                                     </span>
 
                                     <span class="qualification__work">
-                                        <i class='bx bx-calendar-alt
-                                            qualification__icon'></i>
+                                        <i class='bx bx-calendar-alt qualification__icon'></i>
                                         Jan 2023 - Jun 2023
                                     </span>
                                 </div>
-                            </div> -->
-                            <!-- End Edu 3 -->
+                            </div>
+                            <!-- End Edu 3 -->  
 
                         </div>
                     </div>
                 </div>
             </section>
 
-                            
-
             <!-- === Serviços === -->
-            <section class="project section bd-container" id="project">
+            <section class="services section bd-container" id="services">
                 <span class="section-subtitle">O que eu faço</span>
                 <h2 class="section-title">Projetos</h2>
 
-                <!-- <div class="services__container bd-grid">
-                    <div class="services__data">
-                        <i class='bx bx-palette services__icon'></i>
-                        <h3 class="services__title">UI Design</h3>
-                        <p class="services__description">A arte de criar telas</p>
-                        <a href="#" class="button">Ver mais</a>
-                    </div> -->
-
+                <div class="services__container bd-grid">
                     <div class="services__data">
                         <i class='bx bx-laptop services__icon'></i>
                         <h3 class="services__title">Desenvolvedora Web</h3>
-                        <p class="services__description">A arte de codar</p>
-                        <a href="./portfolio.html" class="button">Ver Projetos</a>
+                        <p class="services__description">Projetos que estou trabalhando</p>
+                        <a href="#portfolio" class="button">Ver mais</a>
+                    </div>
+
+                    <div class="services__data">
+                        <i class='bx bx-mobile services__icon'></i>
+                        <h3 class="services__title">Desenvolvedora Mobile</h3>
+                        <p class="services__description">Projetos que estou trabalhando</p>
+                        <a href="#portfolio" class="button">Ver Mais</a>
                     </div>
 
                     <!-- <div class="services__data">
@@ -216,8 +212,8 @@
                 </div>
             </section>
 
-            <!-- === Projetos Sociais === -->
-            <section class="project section bd-container" id="services">
+            <!-- Projetos em mente - Projetos sociais -->
+            <!-- <section class="project section bd-container" id="project" >
                 <div class="project__container bd-grid">
                     <div class="project__data">
                         <i class='bx bx-chat project__icon'></i>
@@ -227,17 +223,131 @@
                             <p class="project__description">Gosto de me envolver
                                 em projetos sociais.
                                 Então é só entrar em contato e podemos bater um
-                                papo a respeito do seu projeto! </p>
+                                papo a respeito do seu projeto!</p>
                         </div>
 
                         <div>
-                            <a href="#" class="button button-white">Entrar em
-                                Contato</a>
+                            <a href="#" class="button button-white">Entre em contato</a>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- === Portfolio === -->
+            <section class="portfolio section bd-container" id="portfolio">
+                <span class="section-subtitle">Meus projetos recentes</span>
+                    <h2 class="section-title">Portfolio</h2>
+        
+                    <div class="portfolio__nav">
+                        <span class="portfolio__item" active-portfolio data-filter="all">Todos</span>
+                        <span class="portfolio__item" data-filter=".web">Web</span>
+                        <span class="portfolio__item" data-filter=".app">App</span>
+                        <span class="portfolio__item" data-filter=".ui">Ui</span>
+                    </div>
+
+                    <div class="portfolio__container bd-grid">
+                        <div class="portfolio__content mix web">
+                            <a href="#" class=""><img src="assets/img/work1.jpg" alt="" class="portfolio__img"></a>
+                            <div class="portfolio__data">
+                                <span class="portfolio__subtitle">Desenvolvimento Web</span>
+                                <a href="#" class=""><h2 class="portfolio__title">
+                                    Novo Projeto que desenvolvi.
+                                </h2></a>
+                                <a href="#" class="button button-link">Ver Projeto</a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content mix web">
+                            <a href="#" class=""><img src="assets/img/work2.jpg" alt="" class="portfolio__img"></a>
+                            <div class="portfolio__data">
+                                <span class="portfolio__subtitle">Desenvolvimento Web</span>
+                                <a href="#" class=""><h2 class="portfolio__title">
+                                    Novo Projeto que desenvolvi.
+                                </h2></a>
+                                <a href="#" class="button button-link">Ver Projeto</a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content mix app">
+                            <a href="#" class=""><img src="assets/img/work3.jpg" alt="" class="portfolio__img"></a>
+                            <div class="portfolio__data">
+                                <span class="portfolio__subtitle">Mobile App</span>
+                                <a href="#" class=""><h2 class="portfolio__title">
+                                    Novo Projeto que desenvolvi.
+                                </h2></a>
+                                <a href="#" class="button button-link">Ver Projeto</a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content mix app">
+                            <a href="#" class=""><img src="assets/img/work4.jpg" alt="" class="portfolio__img"></a>
+                            <div class="portfolio__data">
+                                <span class="portfolio__subtitle">Mobile App</span>
+                                <a href="#" class=""><h2 class="portfolio__title">
+                                    Novo Projeto que desenvolvi.
+                                </h2></a>
+                                <a href="#" class="button button-link">Ver Projeto</a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content mix ui">
+                            <a href="#" class=""><img src="assets/img/work5.jpg" alt="" class="portfolio__img"></a>
+                            <div class="portfolio__data">
+                                <span class="portfolio__subtitle">Ui Design</span>
+                                <a href="#" class=""><h2 class="portfolio__title">
+                                    Novo Projeto que desenvolvi.
+                                </h2></a>
+                                <a href="#" class="button button-link">Ver Projeto</a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content mix ui">
+                            <a href="#" class=""><img src="assets/img/work6.jpg" alt="" class="portfolio__img"></a>
+                            <div class="portfolio__data">
+                                <span class="portfolio__subtitle">Ui Design</span>
+                                <a href="#" class=""><h2 class="portfolio__title">
+                                    Novo Projeto que desenvolvi.
+                                </h2></a>
+                                <a href="#" class="button button-link">Ver Projeto</a>
+                            </div>
                         </div>
 
                     </div>
+                </section>
+                          
+            <!-- === Depoimentos ===-->
+            <!-- <section class="testimonial section bd-container">
+                <span class="section-subtitle">As pessoas dizem</span>
+                <h2 class="section-title">Depoimentos</h2>
+
+                <div class="testimonial__container swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="testimonial__content swiper-slide">
+                            <img src="/assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+                            <h3 class="testimonial__title">Nome 1</h3>
+                            <span class="testimonial__client">Cliente </span>
+                            <p class="testimonial__description">Depoimento 1</p>
+                        </div>
+
+                        <div class="testimonial__content swiper-slide">
+                            <img src="/assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+                            <h3 class="testimonial__title">Nome 2</h3>
+                            <span class="testimonial__client">Cliente </span>
+                            <p class="testimonial__description">Depoimento 2</p>
+                        </div>
+
+                        <div class="testimonial__content swiper-slide">
+                            <img src="/assets/img/testimonial3.jpg" alt="" class="testimonial__img">
+                            <h3 class="testimonial__title">Nome 3</h3>
+                            <span class="testimonial__client">Cliente</span>
+                            <p class="testimonial__description">Depoimento 3</p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-            </section>
+            </section> -->
 
                 <!-- === Contato === -->
                 <section class="contact section bd-container" id="contact">
@@ -265,7 +375,7 @@
                             <div class="contact__box">
                                 <i class='bx bx-envelope contact__icon'></i>
                                 <h3 class="contact__title">E-mail</h3>
-                                <span class="contact__description">lucianasena.on@gmail.com</span>
+                                <span class="contact__description">lucianasena.on@outlook.com</span>
                             </div>
 
                             <div class="contact__box">
@@ -273,18 +383,35 @@
                                 <h3 class="contact__title">Whatsapp</h3>
                                 <div>
                                     <a href="https://wa.link/3ix8g4"
-                                        class="contact__social"> <i class='bx
-                                            bxl-whatsapp'></i> </a>
+                                        class="contact__social"> <i class='bx bxl-whatsapp'></i> </a>
                                     <!--  <a href="#" class="contact__social"> <i class='bx bxl-telegram' ></i> </a>
                                 <a href="#" class="contact__social"> <i class='bx bxl-discord-alt' ></i> </a>
                                 <a href="#" class="contact__social"> <i class='bx bxl-slack' ></i> </a> -->
                                 </div>
                             </div>
                         </div>
+
+                        <!-- <form action="" class="contact__form">
+                            <div class="contact__inputs">
+                                <input type="text" placeholder="Name" class="contact__input">
+                                <input type="email" placeholder="Email" class="contact__input">
+                            </div>
+
+                            <div class="contact__inputs">
+                                <input type="text" placeholder="Projeto" class="contact__input">
+                                <input type="number" placeholder="Number" class="contact__input">
+                            </div>
+
+                            <textarea name="" id="" cols="30" rows="7" placeholder="Mensagem" class="contact__input"></textarea>
+
+                            <input type="submit" value="Enviar Mensagem" class="button contact__button">
+                        </form> -->
+
                     </div>
                 </section>
 
             </main>
+
             <!-- === Footer === -->
             <footer class="footer">
                 <div class="footer__container bd-container">
@@ -292,30 +419,25 @@
                     <p class="footer__description"> </p>
 
                     <div class="footer__social">
-                        <a href="#" class="footer__link"><i class='bx
-                                bxl-linkedin-square'></i></a>
-                        <a href="#" class="footer__link"><i class='bx
-                                bxl-github'></i></a>
-                        <!-- <a href="#" class="footer__link"><i class='bx bxl-gmail' ></i></a> -->
+                        <a href="#" class="footer__link"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="#" class="footer__link"><i class='bx bxl-github'></i></a>
+                        <a href="#" class="footer__link"><i class='bx bxl-gmail' ></i></a>
                     </div>
-                    <!-- <p class="footer__copy"> Luciana Sena&#169; 2023 </p> -->
+                    <p class="footer__copy"> Todos os direitos reservados <br> &#169;Luciana Sena - 2023</p>
                 </div>
             </footer>
 
-            <!-- === Mixitup === -->
-
-            <script src="./assets/js/mixitup.min.js"></script>
+            <!-- === Mixitup Filtro === -->
+            <script src="assets/js/mixitup.min.js"></script>
 
             <!-- === Swiper JS === -->
-
-            <script src=""></script>
+            <script src="assets/js/swiper-bundle.min.js"></script>
 
             <!-- === Gsap === -->
-
-            <script src=""></script>
+            <script src="assets/js/gsap.min.js"></script>
 
             <!-- === Menu JS === -->
+            <script src="assets/js/main.js"></script>
 
-            <script src="./assets/js/main.js"></script>
         </body>
     </html>
