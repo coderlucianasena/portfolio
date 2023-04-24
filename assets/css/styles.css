@@ -394,16 +394,16 @@ img{
 /* === Qualificação === */
 .qualification__container{
     row-gap: 2.5rem;
-    /* text-align: center;
-    align-items: center; */
+    text-align: center;
+    align-items: center;
 }
 
 .qualification__title{
     font-size: var(--h3-font-size);
     color: var(--first-color);
     margin-bottom: var(--mb-2);
-    display: flex; /* Antigo era grid */
-    align-items: center;
+    display: grid; /* Antigo era  */
+    /* align-items: center; */
     /* text-align: center; */
 }
 
@@ -701,10 +701,14 @@ img{
     }
 
     .about__container, 
-    .qualification__container,
     .services__container, 
     .portfolio__container{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qualification__container{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
     }
 
     .contact__form{
