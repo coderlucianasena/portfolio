@@ -233,7 +233,6 @@ img{
     background-color: var(--first-color-lighten);
 }
 
-
 /* === Rolagem Topo === */
 .scrolltop{
     position: fixed;
@@ -242,12 +241,12 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .5rem;
+    padding: .3rem;
     background-color: rgba(123, 111, 113, .7);
-    border-radius: .5rem;
+    border-radius: .4rem;
     z-index: var(--z-tooltip);
     transition: .4s;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .scrolltop:hover{
@@ -255,7 +254,7 @@ img{
 }
 
 .scrolltop__icon {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--first-color-lighten);
 }
 
