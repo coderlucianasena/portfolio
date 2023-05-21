@@ -217,7 +217,7 @@ img{
     background-color: var(--first-color-light);
 }
 
-/* Mudar background header */
+/* MUDAR BACKGROUND HEADER */
 .scroll-header {
     background-color: var(--first-color-lighten);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
